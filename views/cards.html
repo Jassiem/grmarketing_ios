@@ -1,0 +1,44 @@
+<div class='banner-top'>
+	<img src="images/silver_star_logo.jpg"/>
+</div>
+<div class='card' ng-repeat='card in allCards'>
+	<div class='space' ng-if="$index == 0"> </div>
+	<h2 class='title'> {{card.title}} </h2>
+	<hr/>
+	<div class='row'>
+		<div class='col-xs-9 graphic'>
+			<a ng-click='getBarcodeImage(card.product_number)'> 
+				<img ng-src='{{card.graphic_file_name}}'/>
+			</a>
+		</div>
+		<div class='col-xs-3'>
+			<p class='description'> {{card.description}} </p>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-xs-3'>
+		<p class='price'> ${{card.price}} </p> 
+		</div>
+		<div class='col-xs-9'>
+			<div class='row start'>
+				<div class='col-xs-6'>
+					<p> Start Date: </p>
+				</div>
+				<div class='col-xs-6'>
+					<p> {{card.start_date}} </p>
+				</div>
+			</div>
+			<div class ='row end'>
+				<div class='col-xs-6'>
+					<p> End Date:</p>
+				</div>
+				<div class='col-xs-6'>
+					<p> {{card.end_date}} </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class='banner-bottom'>
+	Powered By: <img src="images/mas_logo.jpg"/>
+</div>

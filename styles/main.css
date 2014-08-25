@@ -1,0 +1,38 @@
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  border-top: 1px solid #e5e5e5;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.container {
+  /* background-color: #E3C5AF;*/
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.menu .list-group-item {
+  background: rgba(34, 34, 34, .6);
+  color: #fff;
+  font-weight: 500;
+}
+
+.menu .list-group-item:hover {
+  color: #000;
+}
+
